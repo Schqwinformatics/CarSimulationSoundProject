@@ -1,0 +1,269 @@
+Model {
+  Name			  "byteviewer"
+  Version		  3.00
+  SimParamPage		  "Solver"
+  SampleTimeColors	  off
+  InvariantConstants	  off
+  WideVectorLines	  off
+  ShowLineWidths	  off
+  ShowPortDataTypes	  off
+  StartTime		  "0.0"
+  StopTime		  "10.0"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Matrix"
+  LimitMaxRows		  off
+  MaxRows		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  IntegerOverflowMsg	  "warning"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  SignalLabelMismatchMsg  "none"
+  ConsistencyChecking	  "off"
+  ZeroCross		  on
+  SimulationMode	  "normal"
+  BlockDataTips		  on
+  BlockParametersDataTip  on
+  BlockAttributesDataTip  off
+  BlockPortWidthsDataTip  off
+  BlockDescriptionStringDataTip	off
+  BlockMaskParametersDataTip off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  BooleanDataType	  off
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "oneshot"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  Created		  "Fri Nov 26 22:18:57 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "campa"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun Dec 12 10:04:24 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:43>"
+  ConfigurationManager	  "none"
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "byteviewer"
+    Location		    [667, 210, 1168, 598]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    AutoZoom		    on
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [45, 140, 75, 170]
+      Value		      "3.14"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [380, 16, 465, 184]
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display1"
+      Ports		      [1, 0, 0, 0, 0]
+      Position		      [385, 237, 465, 263]
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "S-Function2"
+      Ports		      [1, 1, 0, 0, 0]
+      Position		      [130, 140, 190, 170]
+      FunctionName	      "byteview"
+      Parameters	      "Ni,Ti,To"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+      MaskType		      "Byte Viewer"
+      MaskDescription	      "  This block takes in input a vector of Ni sign"
+"als belonging to a type Ti,\n  puts them all in a contiguous memory zone, and"
+" reinterprets them as \n  a vector of No signals belonging to a type To.   \n"
+"  The number of outputs No is equal to Ni*sizeof(To)/sizeof(Ti),\n  where siz"
+"eof is the number of bytes of the type."
+      MaskHelp		      "  This block takes in input a vector of Ni sign"
+"als belonging to a type Ti,\n  puts them all in a contiguous memory zone, and"
+" reinterprets them as \n  a vector of No signals belonging to a type To.   \n"
+"  The number of outputs No is equal to Ni*sizeof(To)/sizeof(Ti),\n  where siz"
+"eof is the number of bytes of the type.\n\n  Typically you can use this block"
+" to decompose/recompose a double \n  or a float into/from the bytes that comp"
+"oses it."
+      MaskPromptString	      "Number of inputs (Ni)|Input Type (Ti)|Output Ty"
+"pe (To)"
+      MaskStyleString	      "edit,popup(double|single|int8|uint8|int16|uint1"
+"6|int32|uint32|boolean),popup(double|single|int8|uint8|int16|uint16|int32|uin"
+"t32|boolean)"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskVariables	      "Ni=@1;Ti=@2;To=@3;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "1|double|uint8"
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "S-Function3"
+      Ports		      [1, 1, 0, 0, 0]
+      Position		      [260, 235, 320, 265]
+      FunctionName	      "byteview"
+      Parameters	      "Ni,Ti,To"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+      MaskType		      "Byte Viewer"
+      MaskDescription	      "  This block takes in input a vector of Ni sign"
+"als belonging to a type Ti,\n  puts them all in a contiguous memory zone, and"
+" reinterprets them as \n  a vector of No signals belonging to a type To.   \n"
+"  The number of outputs No is equal to Ni*sizeof(To)/sizeof(Ti),\n  where siz"
+"eof is the number of bytes of the type."
+      MaskHelp		      "  This block takes in input a vector of Ni sign"
+"als belonging to a type Ti,\n  puts them all in a contiguous memory zone, and"
+" reinterprets them as \n  a vector of No signals belonging to a type To.   \n"
+"  The number of outputs No is equal to Ni*sizeof(To)/sizeof(Ti),\n  where siz"
+"eof is the number of bytes of the type.\n\n  Typically you can use this block"
+" to decompose/recompose a double \n  or a float into/from the bytes that comp"
+"oses it."
+      MaskPromptString	      "Number of inputs (Ni)|Input Type (Ti)|Output Ty"
+"pe (To)"
+      MaskStyleString	      "edit,popup(double|single|int8|uint8|int16|uint1"
+"6|int32|uint32|boolean),popup(double|single|int8|uint8|int16|uint16|int32|uin"
+"t32|boolean)"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskVariables	      "Ni=@1;Ti=@2;To=@3;"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "8|uint8|double"
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      DstBlock		      "S-Function2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "S-Function2"
+      SrcPort		      1
+      Points		      [35, 0]
+      Branch {
+	Points			[0, -55]
+	DstBlock		"Display"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 95]
+	DstBlock		"S-Function3"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "S-Function3"
+      SrcPort		      1
+      DstBlock		      "Display1"
+      DstPort		      1
+    }
+  }
+}

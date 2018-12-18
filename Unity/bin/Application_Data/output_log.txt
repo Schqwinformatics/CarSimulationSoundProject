@@ -1,0 +1,42 @@
+Initialize engine version: 5.6.1f1 (2860b30f0b54)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x416)
+    Vendor:   Intel
+    VRAM:     2228 MB
+    Driver:   10.18.14.4432
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\svenman\Desktop\SImulinkUnity3D_Example\Unity3D_Project\bin\Application_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\svenman\Desktop\SImulinkUnity3D_Example\Unity3D_Project\bin\Application_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\svenman\Desktop\SImulinkUnity3D_Example\Unity3D_Project\bin\Application_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\svenman\Desktop\SImulinkUnity3D_Example\Unity3D_Project\bin\Application_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\svenman\Desktop\SImulinkUnity3D_Example\Unity3D_Project\bin\Application_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\svenman\Desktop\SImulinkUnity3D_Example\Unity3D_Project\bin\Application_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\svenman\Desktop\SImulinkUnity3D_Example\Unity3D_Project\bin\Application_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\svenman\Desktop\SImulinkUnity3D_Example\Unity3D_Project\bin\Application_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.019 seconds
+Platform assembly: C:\Users\svenman\Desktop\SImulinkUnity3D_Example\Unity3D_Project\bin\Application_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\svenman\Desktop\SImulinkUnity3D_Example\Unity3D_Project\bin\Application_Data\Managed\System.dll (this message is harmless)
+desktop: 1680x1050 60Hz; virtual: 5040x1050 at -1680,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.242906 ms
+FlyCamera Awake() - RESETTING CAMERA POSITION
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 30fc -> priority: 1 
+  Thread -> id: 2a70 -> priority: 1 
+System.Threading.ThreadAbortException: Thread was being aborted
+  at (wrapper managed-to-native) System.Net.Sockets.Socket:RecvFrom_internal (intptr,byte[],int,int,System.Net.Sockets.SocketFlags,System.Net.SocketAddress&,int&)
+  at System.Net.Sockets.Socket.ReceiveFrom_nochecks_exc (System.Byte[] buf, Int32 offset, Int32 size, SocketFlags flags, System.Net.EndPoint& remote_end, Boolean throwOnError, System.Int32& error) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket.ReceiveFrom_nochecks (System.Byte[] buf, Int32 offset, Int32 size, SocketFlags flags, System.Net.EndPoint& remote_end) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.Socket.ReceiveFrom (System.Byte[] buffer, System.Net.EndPoint& remoteEP) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.UdpClient.Receive (System.Net.IPEndPoint& remoteEP) [0x00000] in <filename unknown>:0 
+  at ReceiveUDP.ReceiveData () [0x00000] in <filename unknown>:0 
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
